@@ -1,6 +1,7 @@
--- Autocmds are automatically loaded on the VeryLazy event
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
+-- Autocmds are automatically loaded on the VeryLazy event
 -- Add any additional autocmds here
+
 local format_is_enabled = true
 
 local function augroup(name)
@@ -36,7 +37,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
     -- Tsserver usually works poorly. Sorry you work with bad languages
     -- You can remove this line if you know what you're doing :)
-    if client.name == "tsserver" then
+    if client.name == "tsserver" or client.name == "volar" then
       return
     end
 
