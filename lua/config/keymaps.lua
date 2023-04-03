@@ -9,5 +9,3 @@ local function map(mode, lhs, rhs, opts)
     vim.keymap.set(mode, lhs, rhs, opts)
   end
 end
-
-map("n", "<leader>e", vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
