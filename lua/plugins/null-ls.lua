@@ -10,7 +10,6 @@ return {
         sources = {
           nls.builtins.formatting.fish_indent,
           nls.builtins.diagnostics.fish,
-          nls.builtins.diagnostics.eslint,
           nls.builtins.formatting.stylua,
           nls.builtins.formatting.shfmt,
           -- nls.builtins.completion.spell,
